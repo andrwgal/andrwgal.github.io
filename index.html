@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova del sito</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" > <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> <!-- Google Fonts-->
+    <link rel="stylesheet" href="style.css"> <!-- css -->
+    
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>And Gal</h1>
+            <ul>
+                <li><a data-page="home" href="#casa">Home</a></li> <!-- Data-page è relativo ad alcune nuove funzioni -->
+                <li><a data-page="projects" href="#progetti">Projects</a></li> <!-- Data-page è relativo ad alcune nuove funzioni -->
+                <li><a data-page="contacts" href="#contatti">Contacts</a></li> <!-- Data-page è relativo ad alcune nuove funzioni -->
+                <div class="bubble"></div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section data-index="0" class="home" id="casa"> <!-- Data-index è relativo ad alcune nuove funzioni -->
+            <h2>Home</h2>
+        </section>
+        <section data-index="1" class="projects" id="progetti"> <!-- Data-index è relativo ad alcune nuove funzioni -->
+            <h2>Projects</h2>
+        </section>
+        <section data-index="2" class="contacts" id="contatti"> <!-- Data-index è relativo ad alcune nuove funzioni -->
+            <h2>Contacts</h2>
+        </section>
+    </main>
+
+
+    <script  type="text/javascript" src="./app.js"></script> <!-- js -->
+</body>
+</html>
