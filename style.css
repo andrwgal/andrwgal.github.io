@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", sans-serif; /* "Montserrat --> Google Fonts */
+}
+
+header{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); /* x y blur rgba(r,g,b, opacity) */
+    position: sticky; /* quando scrolli resta fisso */
+    top: 0px; /* position: sticky non funziona senza questo comando */
+    background: white; 
+}
+
+
+nav{
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1, nav ul{
+    font-size: 1.5rem;
+    flex: 1;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h2{
+    font-size: 5rem;
+    color: white;
+}
+
+.home{
+    background: linear-gradient(to bottom, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects{
+    background: linear-gradient(to bottom, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contacts{
+    background: linear-gradient(to top, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bubble{
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(to bottom, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
